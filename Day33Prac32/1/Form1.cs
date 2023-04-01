@@ -28,6 +28,8 @@ namespace _1
             DataColumn dcName = dtTours.Columns.Add("Название");
             DataColumn dcPrice = dtTours.Columns.Add("Цена", typeof(Decimal));
             DataColumn dcInformation = dtTours.Columns.Add("Информация");
+            DataColumn dcNumSeats = dtTours.Columns.Add("Количество мест", typeof(Int32));
+            DataColumn dcNumTurist = dtTours.Columns.Add("Количество туристов", typeof(Int32));
             dataGridView1.DataSource = dsTours.Tables["Туры"].DefaultView;
 
         }
